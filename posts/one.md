@@ -1,16 +1,18 @@
 ---
-title: this is first title
-description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorum perspiciatis delectus, totam doloribus nostrum?
-date: 12.8.23
+title: This is first title
+description: Lorem adipisicing elit. Possimus , totam doloribus nostrum?
+date: Aug 12,2023
 ---
 
 # This is First Post
 
 ```
-const = "hello"
+function greet() {
+    console.log("Hello");
+}
 ```
 
-* One
-* Two
+- One
+- Two
 
 > Lorem20

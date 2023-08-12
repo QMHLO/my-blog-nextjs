@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
 
-
 // async function fetchRepos() {
 //   const response = await fetch("https://api.github.com/users/htetlinoo/repos");
 //   const repos = await response.json();
@@ -34,13 +33,13 @@ const ReposPage = () => {
   if (!data) return <p>Error Fetching Occurred.</p>;
 
   return (
-    <div className="my-10">
+    <div className="my-10 w-full">
       <h2 className="text-5xl py-5 mb-10 text-center">My Repositories</h2>
-      <ul className="grid sm:grid-cols-1 md:grid-cols-2  gap-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-max">
         {data.map((data) => (
           <Card data={data} key={data.id} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

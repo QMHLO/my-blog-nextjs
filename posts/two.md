@@ -1,7 +1,7 @@
 ---
 title: this is second title
 description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorum perspiciatis delectus, totam doloribus nostrum?
-date: 12.8.23
+date: Aug 12,2023
 ---
 
 # This is Second Post
