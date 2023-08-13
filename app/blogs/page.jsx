@@ -6,18 +6,18 @@ function BlogsPage() {
   const postMetaData = getPostMetaData();
   // console.log(postMetaData)
   const unSortPosts = postMetaData.map((obj) => {
-    return { ...obj, date: new Date(obj.date).getTime() };
+    return { ...obj, sort: new Date(obj.sort).getTime() };
   });
   // console.log(unSortPosts);
   //Descending Sort(high to low)
   const sortedPosts = unSortPosts.sort(
-    (objA, objB) => objB.date - Number(objA.date)
+    (objA, objB) => Number(objB.sort) - Number(objA.sort)
   );
 
   // console.log(postMetaData)
-  // console.log(sortedPosts);
+  console.log(sortedPosts);
 
-  const postPreviews = postMetaData.map((post) => (
+  const postPreviews = sortedPosts.map((post) => (
     <PostPreview post={post} key={post.slug} />
   ));
   return (

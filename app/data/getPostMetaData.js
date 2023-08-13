@@ -16,6 +16,7 @@ const getPostMetaData = () => {
       date: matterResult.data.date,
       description: matterResult.data.description,
       slug: fileName.replace(".md", ""),
+      sort:matterResult.data.date,
     };
   });
   return posts;

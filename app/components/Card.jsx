@@ -10,9 +10,7 @@ const Card = ({ data }) => {
       className="shadow-md bg-slate-200 p-5 rounded-md mb-3"
     >
       <div>
-        <h3 className="text-3xl font-bold mb-3 uppercase break-words">
-          {data.name}
-        </h3>
+        <h3 className="text-3xl font-bold mb-3 break-words">{data.name}</h3>
         <p className="text-2xl mb-2">{data.description}</p>
         <div className="flex items-center gap-5">
           {data.language && (

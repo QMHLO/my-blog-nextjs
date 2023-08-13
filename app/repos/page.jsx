@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import { ImSpinner6 } from "react-icons/im";
 
 // async function fetchRepos() {
 //   const response = await fetch("https://api.github.com/users/htetlinoo/repos");
@@ -29,7 +30,10 @@ const ReposPage = () => {
   }, []);
   // const repos = await fetchRepos();
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+    return (
+      <ImSpinner6 className="absolute top-1/2 left-[45%] md:left-1/2 text-8xl animate-spin" />
+    );
   if (!data) return <p>Error Fetching Occurred.</p>;
 
   return (

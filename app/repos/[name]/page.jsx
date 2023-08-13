@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { IoArrowBackSharp } from "react-icons/io5";
+import { ImSpinner6 } from "react-icons/im";
 
 const RepoSinglePage = () => {
   const [data, setData] = useState(null);
@@ -26,7 +27,10 @@ const RepoSinglePage = () => {
     };
     fetchData();
   }, []);
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+    return (
+      <ImSpinner6 className="absolute top-1/2 left-[45%] md:left-1/2 text-8xl animate-spin" />
+    );
   if (!data) return <p>Error Fetching Occurred.</p>;
 
   return (
