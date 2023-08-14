@@ -6,9 +6,9 @@ date: Aug 12,2023
 
 # This is First Post
 
-```
+```javascript
 function greet() {
-    console.log("Hello");
+  console.log("Hello");
 }
 ```
 
