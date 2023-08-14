@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
       <meta property="twitter:title" content="myblog" />
       <meta property="twitter:description" content="my next site, next js,react,javascript,node" />
       <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+      <meta name="robots" content="all" />
       <body>
         <Header />
         <main className="container mx-auto px-5 mt-20 md:mt-0">{children}</main>
